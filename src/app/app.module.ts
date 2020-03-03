@@ -9,6 +9,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/home/slider/slider.component';
+import { ColorsDirective } from './directives/colors.directive';
+import { CuadradoPipe } from './pipes/cuadrado.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SliderComponent } from './components/home/slider/slider.component';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    SliderComponent
+    SliderComponent,
+    ColorsDirective,
+    CuadradoPipe
   ],
   imports: [
     BrowserModule,
