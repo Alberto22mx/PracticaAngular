@@ -12,7 +12,7 @@ const routes: Routes = [
     children: [
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) },
-      {path: 'products', loadChildren: () => import('./components/products/products.module').then(m => m.ProductsModule) },
+      {path: 'productS', loadChildren: () => import('./components/productS/products.module').then(m => m.ProductsModule) },
       {path: 'contact', component: ContactComponent, canActivate: [AdminGuard]},
       {path: '**', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) }
     ]

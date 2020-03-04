@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ServiceslocalService } from './services/servicelocal/serviceslocal.service';
+import { ProductsService } from './services/products/products.service';
 
 @NgModule({
   declarations: [],
@@ -9,7 +10,8 @@ import { ServiceslocalService } from './services/servicelocal/serviceslocal.serv
     CommonModule
   ],
   providers: [
-    ServiceslocalService
+    ServiceslocalService,
+    ProductsService
   ]
 })
 export class CoreModule { }
