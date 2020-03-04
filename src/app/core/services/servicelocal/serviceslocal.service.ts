@@ -90,6 +90,6 @@ export class ServiceslocalService {
     return this.products;
   }
   getProduct(id: number) {
-    return this.products.find(item => id === item.id);
+    return this.getAllProducts().find(item => id === item.id);
   }
 }

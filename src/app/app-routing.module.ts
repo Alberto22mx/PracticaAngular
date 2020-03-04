@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-import { ProducsComponent } from './components/producs/producs.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { AdminGuard } from './guardians/admin/admin.guard'
@@ -13,7 +12,7 @@ const routes: Routes = [
     children: [
       {path: '', redirectTo: '/home', pathMatch: 'full'},
       {path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) },
-      {path: 'products', component: ProducsComponent},
+      {path: 'products', loadChildren: () => import('./components/products/products.module').then(m => m.ProductsModule) },
       {path: 'contact', component: ContactComponent, canActivate: [AdminGuard]},
       {path: '**', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) }
     ]
