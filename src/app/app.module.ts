@@ -8,6 +8,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SharedModule } from './shared/shared.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
