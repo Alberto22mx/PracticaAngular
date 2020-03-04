@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ServiceslocalService } from './services/servicelocal/serviceslocal.service'
+import { ServiceslocalService } from './services/servicelocal/serviceslocal.service';
 
 @NgModule({
   declarations: [],

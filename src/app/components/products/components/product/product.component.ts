@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CoreModule } from './../../../../core/core.module';
+import { ServiceslocalService } from './../../../../core/services/servicelocal/serviceslocal.service';
 
 @Component({
   selector: 'app-product',
@@ -7,14 +7,13 @@ import { CoreModule } from './../../../../core/core.module';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-
+  productos: Array<any> = [];
   constructor(
-    private products: CoreModule
-  ) { }
+    public products: ServiceslocalService
+   ) { }
 
   ngOnInit(): void {
-    console.log(this.products);
-    console.log("Todo bien");
+    this.productos = this.products.getAllProducts();
   }
 
 }
