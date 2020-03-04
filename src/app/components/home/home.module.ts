@@ -5,7 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SliderComponent } from './components/slider/slider.component';
 
 import { HomeRoutingModule } from './home-routing.module';
-
+import { SharedModule } from './../../shared/shared.module';
 @NgModule({
     declarations: [
         SliderComponent,
@@ -13,7 +13,8 @@ import { HomeRoutingModule } from './home-routing.module';
     ],
     imports: [
         HomeRoutingModule,
-        CommonModule
+        CommonModule,
+        SharedModule
     ]
 })
 export class HomeModule{

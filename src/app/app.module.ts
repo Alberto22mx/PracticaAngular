@@ -5,26 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProducsComponent } from './components/producs/producs.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ColorsDirective } from './directives/colors.directive';
-import { CuadradoPipe } from './pipes/cuadrado.pipe';
+import { SharedModule } from './shared/shared.module';
 import { LayoutComponent } from './components/layout/layout.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProducsComponent,
-    ContactComponent,
-    HeaderComponent,
-    FooterComponent,
-    ColorsDirective,
-    CuadradoPipe,
-    LayoutComponent
+    LayoutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
