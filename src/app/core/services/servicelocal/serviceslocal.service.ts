@@ -7,77 +7,77 @@ import { Product } from './../../../models/products.model';
 export class ServiceslocalService {
   products: Product[] = [
     {
-      id: 0,
+      id: '0',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 1,
+      id: '1',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 2,
+      id: '2',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 3,
+      id: '3',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 4,
+      id: '4',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 5,
+      id: '5',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 6,
+      id: '6',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 7,
+      id: '7',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 8,
+      id: '8',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 9,
+      id: '9',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
       description: 'Proident cupidatat sint pariatur enim aliquip.'
     },
     {
-      id: 10,
+      id: '10',
       image: '../../../../assets/img/',
       title: 'titulo',
       price: 2251,
@@ -90,6 +90,6 @@ export class ServiceslocalService {
     return this.products;
   }
   getProduct(id: number) {
-    return this.products.find(item => id === item.id);
+    //return this.products.find(item => id === item.id);
   }
 }

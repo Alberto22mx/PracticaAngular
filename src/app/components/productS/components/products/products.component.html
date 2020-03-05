@@ -1,1 +1,13 @@
 <p>products works!</p>
+<div class="product-grid">
+  <!--
+    Esto es un coponente el cual recibe un array y ese array lo imprime en la patalla.
+    Se le aplica un ngFor para llamarlo varias veces y mandarle todos los array de una vez y componente imprimetodos.
+    El componente tiene un output "productClicked" es como un evento personalizado cuando seleda click se ejecuta la función del componente padre y recibe un id desde el componenete hijo este id es el output para recibirlo usamos "$event" es una ayuda de angular para recibir el valor.
+    Tabien tiene un input "product" el cual recibe un valor y este valor es el array que va a pitar en la patalla por medio de el html de si mismo.
+   -->
+  <app-product *ngFor="let product of products"
+    (productClicked)="clickProduct($event)"
+    [product]="product">
+  </app-product>
+</div>
