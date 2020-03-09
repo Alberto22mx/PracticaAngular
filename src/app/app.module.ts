@@ -10,12 +10,14 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { FormProductComponent } from './components/admin/form-product/form-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    ContactComponent
+    ContactComponent,
+    FormProductComponent
   ],
   imports: [
     BrowserModule,
